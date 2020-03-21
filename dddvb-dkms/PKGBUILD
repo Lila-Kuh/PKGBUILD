@@ -3,10 +3,11 @@
 # Maintainer: André-Sebastian Liebe <andre+arch at lianse dot eu>
 # Contributor: schulmar 
 # Contributor: Christopher Reimer <mail+vdr4arch[at]c-reimer[dot]de>
+# Contributor: Lila-Kuh
 _pkgbase="dddvb"
 pkgname="dddvb-dkms"
-pkgdesc="Official Digital Devices driver package as DKMS"
-pkgver=0.9.33
+pkgdesc="GIT-MASTER-Dev-Pack Digital Devices driver package as DKMS"
+pkgver=master
 pkgrel=1
 arch=("any")
 url="http://download.digital-devices.de"
@@ -17,8 +18,8 @@ replaces=('digitaldevices-dvb-drivers' 'dvbsky-dvb-drivers' 'technotrend-dvb-dri
 conflicts=('digitaldevices-dvb-drivers' 'dvbsky-dvb-drivers' 'technotrend-dvb-drivers')
 provides=('dddvb-dkms')
 install="${pkgname}.install"
-source=("https://github.com/DigitalDevices/$_pkgbase/archive/$pkgver.tar.gz")
-sha256sums=('6dd5c92fa92a9346d48bb9dff270ffed5e92ab5bf4c51cef1c37fb699659814d')
+source=("https://github.com/ejjoman/$_pkgbase/archive/$pkgver.tar.gz")
+sha256sums=('SKIP')
 
 build() {
   cd "$srcdir/$_pkgbase-$pkgver"
